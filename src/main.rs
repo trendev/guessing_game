@@ -3,11 +3,11 @@ use std::cmp::Ordering;
 use std::io;
 
 fn main() {
-    println!("Guess the number!");
-
+    
     let n: u32 = 100;
     let max = n.ilog2() + 1;
-
+    println!("Guess the number in {max} attempts!");
+    
     let secret_number = rand::thread_rng().gen_range(1..=n);
     let mut success = false;
 
@@ -27,8 +27,8 @@ fn main() {
         println!("You guessed: {guess}");
 
         match guess.cmp(&secret_number) {
-            Ordering::Less => println!("<< Too small!"),
-            Ordering::Greater => println!(">> Too big!"),
+            Ordering::Less => println!(">> Too small!"),
+            Ordering::Greater => println!("<< Too big!"),
             Ordering::Equal => {
                 println!("## You WIN! ##");
                 success = true;
