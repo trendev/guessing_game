@@ -14,20 +14,20 @@ A simple Rust program where the player tries to guess a randomly generated numbe
 
 ## How to Run
 
-1. Clone this repository:
+### 1. Clone this repository
 
 ```shell
 git clone https://github.com/trendev/guessing_game.git
 cd guessing_game
 ```
 
-2. Build and run the program:
+### 2. Build and run the program
 
 ```shell
 cargo run
 ```
 
-3. Follow the prompts to input your guesses.
+### 3. Follow the prompts to input your guesses
 
 ## Example Output
 
@@ -92,4 +92,4 @@ You guessed: 41
 
 - Rust (version `1.67` or later)
 
-Enjoy playing and improving your guessing skills (using binary search logic or dichotomy...)!
+> Enjoy playing and improving your guessing skills (using binary search logic or dichotomy...)!
