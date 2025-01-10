@@ -12,7 +12,7 @@ fn main() {
     let mut success = false;
 
     for i in (1..=max).rev() {
-        println!("{i} - Please input your guess:");
+        println!("({i}) - Please input your guess:");
         let mut guess = String::new();
 
         io::stdin()
@@ -38,6 +38,6 @@ fn main() {
     }
 
     if !success {
-        println!("## Sorry, you LOOSE :( ##");
+        println!("## Sorry, you LOOSE :( secret number was {secret_number} ##");
     }
 }
